@@ -1,0 +1,44 @@
+.formWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formTitle {
+  font-size: 2rem;
+  color: #fff;
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.message {
+  margin-bottom: 0.9rem;
+  padding: 1rem;
+  width: 30rem;
+  max-width: 39.6rem;
+  height: 23.6rem;
+  border-radius: 0.8rem;
+  outline: none;
+  font-size: 1.8rem;
+  color: #000;
+
+  @media (min-width: 1024px) {
+    width: 39.6rem;
+  }
+}
+
+.btn {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #6f48eb;
+}

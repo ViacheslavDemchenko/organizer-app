@@ -1,0 +1,50 @@
+.listWrap {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.taskListTitle {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #fff;
+
+  @media (min-width: 1024px) {
+    font-size: 2.4rem;
+  }
+}
+
+.taskList {
+  height: 32rem;
+  overflow-y: auto;
+  padding: 0 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+
+  &::-webkit-scrollbar {
+    width: 1rem; 
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #6495ED;  
+    border-radius: 2rem;      
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #6f48eb;    
+    border-radius: 2rem;   
+  }
+}
+
+.taskListWrap {
+  width: 100%;
+  padding: 2rem 0 0 0;
+  border-radius: 0.8rem;
+  background: rgba(255, 255 ,255, 0.2);
+  backdrop-filter: blur(10px);
+
+  @media (min-width: 1024px) {
+    width: 70%;
+  }
+}
