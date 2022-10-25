@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/organizer-app/static/css/main.8ddbb439.css",
+    "main.css": "/organizer-app/static/css/main.2269e74d.css",
     "main.js": "/organizer-app/static/js/main.fd82e07d.js",
     "static/media/main-bg.jpg": "/organizer-app/static/media/main-bg.368f149190ae451f082a.jpg",
     "static/media/edit.svg": "/organizer-app/static/media/edit.59dbb7bceb6019983099b64afd902a5e.svg",
     "index.html": "/organizer-app/index.html",
     "static/media/close.svg": "/organizer-app/static/media/close.88e20a310175e554bfc6b671b1a43068.svg",
     "static/media/check.svg": "/organizer-app/static/media/check.ff9e7574ad9a7d3e16ec5dbc67698370.svg",
-    "main.8ddbb439.css.map": "/organizer-app/static/css/main.8ddbb439.css.map",
+    "main.2269e74d.css.map": "/organizer-app/static/css/main.2269e74d.css.map",
     "main.fd82e07d.js.map": "/organizer-app/static/js/main.fd82e07d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ddbb439.css",
+    "static/css/main.2269e74d.css",
     "static/js/main.fd82e07d.js"
   ]
 }
