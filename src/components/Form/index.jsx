@@ -36,9 +36,12 @@ export const Form = () => {
       day: formDay
     };
 
-    dispatch(addNewTask(newTask));
+    if (newTaskText !== '') {
+      dispatch(addNewTask(newTask));
 
-    setNewTaskText('');
+      setNewTaskText('');
+    }
+
   };
 
   return (

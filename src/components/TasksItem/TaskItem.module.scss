@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 1rem;
 }
 
 .btnHandleTask {
@@ -57,6 +58,7 @@
   justify-content: space-between;
   padding: 1rem 0 0 0;
   border-bottom: 0.1rem solid #fff;
+  word-break: break-word;
 }
 
 .taskText {
