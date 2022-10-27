@@ -4,10 +4,10 @@ import { getTasksFromLS } from '../../utils';
 const initialState = {
   tasks: getTasksFromLS(),
   dayTasks: [],
-  calendarDate: {},
+  calendarDate: [],
   editMode: false,
   editTask: '',
-  editTaskId: 0
+  editTaskId: ''
 };
 
 const tasksSlice = createSlice({
@@ -82,7 +82,7 @@ const tasksSlice = createSlice({
     },
     completeTask(state, action) {
       const newDayTasks = state.dayTasks.map(el => {
-        if(el.id === action.payload.id) {
+        if(el.id === action.payload) {
             return {
               ...el,
               completed: !el.completed
@@ -98,7 +98,7 @@ const tasksSlice = createSlice({
     },
     deleteTask(state, action) {
       const currentDateTasks = state.dayTasks;
-      const filteredDayTasks = currentDateTasks.filter((obj) => obj.id !== action.payload.id);
+      const filteredDayTasks = currentDateTasks.filter((obj) => obj.id !== action.payload);
 
       state.dayTasks = filteredDayTasks;
 
@@ -120,8 +120,8 @@ const tasksSlice = createSlice({
       state.editMode = true;
       const tasks = state.tasks[state.calendarDate.year][state.calendarDate.month][state.calendarDate.day];
 
-      state.tasks.map(task => {
-        if (task.id === action.payload.id) {
+      tasks.map((task) => {
+        if (task.id === action.payload) {
           state.editTask = task.taskText;
           state.editTaskId = task.id;
         }
